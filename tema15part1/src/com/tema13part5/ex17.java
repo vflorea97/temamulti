@@ -1,0 +1,19 @@
+package com.tema13part5;
+
+public class ex17 {
+    public static void main(String[] args) {
+        int[] vect = {34, 12, 54, 3, 54, 21, 0, 14};
+        int nrUlt = vect.length - 1;
+        int max = 0;
+        int nrOri = 0;
+        for (int i = 0; i <= nrUlt; i++){
+            if (max < vect[i]){
+                max = vect[i];
+                if (max == vect[i]){
+                    nrOri++;
+                }
+            }
+        }
+        System.out.println(nrOri);
+    }
+}
